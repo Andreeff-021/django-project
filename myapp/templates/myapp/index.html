@@ -1,0 +1,17 @@
+{% extends 'myapp/base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<h1 style="text-align: center;">{{ h1 }}</h1>
+<h2 style="text-align: center;">{{ h2 }}</h2>
+<!--<div style="display: grid; grid-template-columns: repeat(3, 300px); gap: 20px; justify-content: center;">-->
+<!--    {% for product in products %}-->
+<!--    <div style="border: 1px solid; padding: 20px;">-->
+<!--        <img src="{{ product.image.url }}" alt="image" width="80%">-->
+<!--        <H2 style="text-align: center;">{{ product.name }}</H2>-->
+<!--        <p>{{ product.description }}</p>-->
+<!--        <H3>Price: {{ product.price }} руб</H3>-->
+<!--        <p> Rating: {{ product.rating }}</p>-->
+<!--    </div>-->
+<!--    {% endfor %}-->
+<!--</div>-->
+{% endblock %}

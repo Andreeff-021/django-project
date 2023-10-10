@@ -1,0 +1,13 @@
+{% extends 'myapp/base.html' %}
+{% block title %}About me{% endblock %}
+{% block content %}
+    <h1 style="text-align: center;">Обо мне</h1>
+    <div style="margin-left: 40px;">
+        <p>ФИО:</p>
+        <h3>{{ fio }}</h3>
+        <p>Телефон:</p>
+        <h3>{{ phone }}</h3>
+        <p>Адрес:</p>
+        <h3>{{ adress }}</h3>
+    </div>
+{% endblock %}

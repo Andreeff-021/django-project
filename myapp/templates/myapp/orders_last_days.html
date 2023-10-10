@@ -1,0 +1,19 @@
+{% extends 'myapp/base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block content %}
+<table cellspacing="0" cellpadding="10px" rules="all" border="1px">
+    <tr>
+        <td>Пользователь</td>
+        <td>Заказы за 7 дней</td>
+        <td>Заказы за 30 дней</td>
+        <td>Заказы за 365 дней</td>
+    </tr>
+    <tr>
+        <td>{{ user }}</td>
+        <td>{% for product in 7days %}{{ product }}<br>{% endfor %}</td>
+        <td>{% for product in 30days %}{{ product }}<br>{% endfor %}</td>
+        <td>{% for product in 365days %}{{ product }}<br>{% endfor %}</td>
+    </tr>
+
+</table>
+{% endblock %}
